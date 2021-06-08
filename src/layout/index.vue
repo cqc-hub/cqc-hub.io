@@ -1,12 +1,11 @@
 <template>
-  <div id="app">
-    <router-view />
+  <div class="">
+    cqc
   </div>
 </template>
 
-<script>
-
+<script type="text/ecmascript-6">
 export default {
-  name: 'App'
 };
 </script>
+
