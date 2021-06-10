@@ -16,11 +16,15 @@ router.beforeEach((to, from, next) => {
 
   if (hasToken) {
     if (to.path === '/login') {
-      next({ path: '/' });
+      next('/');
+    } else {
+      next();
     }
   } else if (whiteList.some(m => to.path.startsWith(m))) {
     next();
   } else { // 不在白名单且未登录
-    next('/login');
+    next({
+      path: '/login'
+    });
   }
 });

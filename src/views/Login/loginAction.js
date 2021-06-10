@@ -21,7 +21,7 @@ const initStyle = function() {
   labels.forEach(label => {
     label.innerHTML = label.innerText
       .split('')
-      .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+      .map((letter, index) => `<span style="transition-delay:${index * 50}ms">${letter}</span>`)
       .join('');
   });
 };
@@ -51,6 +51,7 @@ export const loginAction = function() {
   const formSubmit = function(e) {
     e.preventDefault();
     setToken(1);
+    ctx.$router.push('/');
   };
 
   const inputChange = function(e, prop) {

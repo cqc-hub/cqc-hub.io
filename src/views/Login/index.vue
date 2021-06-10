@@ -1,6 +1,8 @@
 <script type="text/ecmascript-6">
 import { loginAction } from './loginAction';
+import backgroundParticles from '@/components/BackgroundParticles';
 export default {
+  components: { backgroundParticles },
   setup() {
     return {
       ...loginAction()
@@ -10,6 +12,7 @@ export default {
   render() {
     return (
       <div class='my-demo-login'>
+        <background-Particles />
         <div class='container'>
           <h1 >
             <img
