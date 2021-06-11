@@ -8,13 +8,6 @@
 
 <script type="text/ecmascript-6">
 export default {
-  data() {
-    return {};
-  },
-
-  mounted() {
-    console.log(123456);
-  }
 };
 </script>
 
